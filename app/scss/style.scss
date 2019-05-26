@@ -67,7 +67,7 @@ $small-w: 500px;
 html {
 	margin: 0 !important;
 	@include f-r;
-	overflow-x: hidden;
+	
 }
 body {
 	position: relative;
@@ -75,7 +75,7 @@ body {
   	padding: 0;
   	
   	padding-top: 105px;
-
+	overflow-x: hidden;
   	@media only screen and (max-width : 1000px) {
   		padding-top: 45px;
   	}

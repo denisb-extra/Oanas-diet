@@ -356,7 +356,7 @@ section.woo {
 		}
 	}
 
-
+	
 	.woocommerce-cart-form {
 		.button {
 			@include f-m;
@@ -454,7 +454,10 @@ section.woo {
 
 		
 	}
-
+	
+	form {
+		width: 100%;
+	}
 	.woocommerce-checkout-review-order {
 		th {
 			text-align: right;

@@ -79,11 +79,11 @@ header {
 			}
 			.buttons {
 				.button {
-					display: none;
-					color: #09C576;
-					&.cart {
-						display: block;
+					span {
+						display: none;
 					}
+					color: #09C576;
+					
 				}
 			}
 			
@@ -525,11 +525,20 @@ section.slider-top {
 			background: #fff;
 		}
 		.hot-spot {
+			&.message {
+				@include f-r;
+				font-size: 18px;
+				color: #fff;
+				@media only screen and (max-width : 700px) {
+					font-size: 13px;
+				}
+			}
 			.content {
 				transform-origin: 0 0;
 				.text {
 					@include f-m;
 					font-size: 72px;
+					line-height: 70px;
 					color: #282828;
 					text-align: center;
 					white-space: nowrap;
@@ -1465,6 +1474,10 @@ footer {
 	z-index: 99;
 	overflow: visible;
 
+	@media only screen and (max-width : 1000px) {
+		margin-top: 40px;
+	}
+
 	.part-top {
 		padding-top: 80px;
 		background-color: transparent;
@@ -1540,6 +1553,7 @@ footer {
 				width: 100%;
 				max-width: 1090px;
 				margin-top: 10px;
+				padding-left: 10px;
 			}
 			input[type="checkbox"] {
 				height: auto;
@@ -1613,7 +1627,6 @@ footer {
 			color: #fff;
 			text-align: center;
 			margin-top: 15px;
-			white-space: nowrap;
 			a {
 				color: #fff;
 			}
@@ -1763,6 +1776,8 @@ footer {
 		background: #fff;
 		padding: 20px 10px;
 		padding-bottom: 5px;
+		position: relative;
+    	z-index: 9;
 
 		.logo {
 			float: right;

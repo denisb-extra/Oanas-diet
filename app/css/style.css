@@ -6,14 +6,14 @@
 html {
   margin: 0 !important;
   font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-  overflow-x: hidden; }
+  font-weight: 400; }
 
 body {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 105px; }
+  padding-top: 105px;
+  overflow-x: hidden; }
   @media only screen and (max-width: 1000px) {
     body {
       padding-top: 45px; } }
@@ -116,10 +116,9 @@ header {
           -webkit-filter: none;
                   filter: none; }
         header .header-top .buttons .button {
-          display: none;
           color: #09C576; }
-          header .header-top .buttons .button.cart {
-            display: block; } }
+          header .header-top .buttons .button span {
+            display: none; } }
   header .header-inner {
     background: #fff;
     height: 65px;
@@ -444,6 +443,15 @@ header {
 section.slider-top .master-slider .ms-view {
   background: #fff; }
 
+section.slider-top .master-slider .hot-spot.message {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff; }
+  @media only screen and (max-width: 700px) {
+    section.slider-top .master-slider .hot-spot.message {
+      font-size: 13px; } }
+
 section.slider-top .master-slider .hot-spot .content {
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0; }
@@ -451,6 +459,7 @@ section.slider-top .master-slider .hot-spot .content {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 72px;
+    line-height: 70px;
     color: #282828;
     text-align: center;
     white-space: nowrap; }
@@ -1205,6 +1214,9 @@ footer {
   position: relative;
   z-index: 99;
   overflow: visible; }
+  @media only screen and (max-width: 1000px) {
+    footer {
+      margin-top: 40px; } }
   footer .part-top {
     padding-top: 80px;
     background-color: transparent;
@@ -1297,7 +1309,8 @@ footer {
       footer .part-top .wpcf7 .acceptance-takanon, footer .part-top .wpcf7 .acceptance-advertise {
         width: 100%;
         max-width: 1090px;
-        margin-top: 10px; }
+        margin-top: 10px;
+        padding-left: 10px; }
       footer .part-top .wpcf7 input[type="checkbox"] {
         height: auto;
         width: auto;
@@ -1357,8 +1370,7 @@ footer {
       font-size: 18px;
       color: #fff;
       text-align: center;
-      margin-top: 15px;
-      white-space: nowrap; }
+      margin-top: 15px; }
       footer .part-top .contact a {
         color: #fff; }
     @media only screen and (max-width: 1250px) {
@@ -1452,7 +1464,9 @@ footer {
   footer .footer-bottom {
     background: #fff;
     padding: 20px 10px;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 9; }
     footer .footer-bottom .section-inner {
       overflow: auto;
       max-width: 100%; }
@@ -5723,6 +5737,8 @@ section.woo {
     border-radius: 0; }
   section.woo .form-row .select2-container .select2-selection--single {
     height: 39px; }
+  section.woo form {
+    width: 100%; }
   section.woo .woocommerce-checkout-review-order th {
     text-align: right;
     line-height: 35px; }
