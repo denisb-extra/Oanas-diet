@@ -404,6 +404,7 @@ header {
     margin-right: 10px; }
   @media only screen and (max-width: 1400px) {
     .floating-button {
+      display: none !important;
       padding: 10px;
       padding-right: 5px;
       display: -webkit-box;
@@ -440,6 +441,18 @@ header {
         display: none; } }
 
 /* ---------------------- Section slider-top ---------------------- */
+@media only screen and (max-width: 600px) {
+  section.slider-top .master-slider .slider-num-2 .hot-spot .content .text,
+  section.slider-top .master-slider .slider-num-5 .hot-spot .content .text,
+  section.slider-top .master-slider .slider-num-8 .hot-spot .content .text {
+    font-size: 72px;
+    line-height: 82px; }
+  section.slider-top .master-slider .slider-num-2 .hot-spot .content,
+  section.slider-top .master-slider .slider-num-5 .hot-spot .content,
+  section.slider-top .master-slider .slider-num-8 .hot-spot .content {
+    right: 20px;
+    position: relative; } }
+
 section.slider-top .master-slider .ms-view {
   background: #fff; }
 
@@ -2756,6 +2769,10 @@ section.contacts {
         section.contacts .cols .col-form {
           margin-top: 35px; } }
 
+.wpcf7-form-control-wrap.acceptance-advertise span[role="alert"] {
+  bottom: -18px !important;
+  /* width: 100%; */ }
+
 /* --------------------- /Section contacts ---------------------- */
 /* ---------------------- Section questions-inner ---------------------- */
 section.questions-inner {
@@ -2979,6 +2996,9 @@ section.post .wpcf7 {
       font-weight: 400;
       font-size: 18px;
       color: #505356; }
+      @media only screen and (max-width: 600px) {
+        section.post .wpcf7 label span {
+          width: 92%; } }
       section.post .wpcf7 label span a {
         color: #09C576; }
   section.post .wpcf7 textarea {
@@ -5404,6 +5424,10 @@ dl.variation dd {
 div.aligncenter {
   display: block;
   margin: 5px auto 5px auto; }
+  @media only screen and (max-width: 600px) {
+    .aligncenter,
+    div.aligncenter {
+      width: 100%; } }
 
 .alignright {
   float: right;

@@ -480,6 +480,7 @@ header {
 	}
 
 	@media only screen and (max-width : 1400px) {
+		display: none!important;
 		padding: 10px;
 		padding-right: 5px;
 		display: flex;
@@ -521,6 +522,23 @@ header {
 /* ---------------------- Section slider-top ---------------------- */
 section.slider-top {
 	.master-slider {
+		@media only screen and (max-width : 600px) {
+			.slider-num-2 .hot-spot .content .text,
+			.slider-num-5 .hot-spot .content .text,
+			.slider-num-8 .hot-spot .content .text {
+				font-size: 72px;
+    			line-height: 82px;
+			}
+
+			.slider-num-2 .hot-spot .content,
+			.slider-num-5 .hot-spot .content,
+			.slider-num-8 .hot-spot .content {
+				right: 20px;
+    			position: relative;
+			}
+		}
+
+
 		.ms-view {
 			background: #fff;
 		}

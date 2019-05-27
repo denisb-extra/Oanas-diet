@@ -7,7 +7,10 @@
 .aligncenter,
 div.aligncenter {
     display: block;
-    margin: 5px auto 5px auto;
+	margin: 5px auto 5px auto;
+	@media only screen and (max-width : 600px) {
+		width: 100%;
+	}
 }
 
 .alignright {

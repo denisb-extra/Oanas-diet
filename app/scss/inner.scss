@@ -1535,6 +1535,18 @@ section.contacts {
 		}
 	}
 }
+
+.wpcf7-form-control-wrap.acceptance-advertise {
+	
+	
+	span[role="alert"] {
+		
+		bottom: -18px!important;
+		/* width: 100%; */
+	}
+
+	
+}
 /* --------------------- /Section contacts ---------------------- */
 
 /* ---------------------- Section questions-inner ---------------------- */
@@ -1799,6 +1811,9 @@ section.post {
 				@include f-r;
 				font-size: 18px;
 				color: #505356;
+				@media only screen and (max-width : 600px) {
+					width: 92%;
+				}
 				a {
 					color: #09C576;
 				}
